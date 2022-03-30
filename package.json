@@ -1,0 +1,27 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Demo'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:public-api": "nodemon src/lms-public-api/index.js",
+    "start:event-processor": "nodemon src/lms-event-processor/index.js",
+    "start": "nodemon src/lms-consumer/index.js"
+  },
+  "author": "Kartik Goel",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "amqplib": "^0.8.0",
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.2",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "massive": "^6.10.2",
+    "mongoose": "^6.2.4",
+    "redis": "^4.0.3"
+  }
+}
